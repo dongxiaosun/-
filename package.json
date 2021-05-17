@@ -1,0 +1,32 @@
+{
+  "name": "authority-credential",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cookie": "node ./cookie/bin/www",
+    "jwt": "node ./jwt/bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongxiaosun/authority-credential.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dongxiaosun/authority-credential/issues"
+  },
+  "homepage": "https://github.com/dongxiaosun/authority-credential#readme",
+  "devDependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11"
+  },
+  "dependencies": {
+    "jws": "^4.0.0"
+  }
+}
