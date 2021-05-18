@@ -1,7 +1,7 @@
 /*
  * @Author: 孙晓东
  * @Date: 2021-05-17 15:12:22
- * @LastEditTime: 2021-05-17 20:28:49
+ * @LastEditTime: 2021-05-19 00:25:45
  */
 var express = require("express");
 var jws = require("jws");
@@ -9,24 +9,30 @@ var signature = require("../signature");
 var router = express.Router();
 
 /* GET users listing. */
-router.get("/", function(req, res, next) {
-  const { username, password } = req.query;
-  if (username === "admin" && password === "123456") {
+router.post("/", function(req, res, next) {
+  const { account, password } = req.body;
+  if (account === "admin" && password === "123456") {
+    // jws 的核心点
     var _signature = jws.sign({
       header: signature.header,
       payload: {
-        username: username,
+        account: account,
         email: "sxd.08@163.com",
-        exp: new Date()
+        exp: new Date().valueOf()
       },
       secret: signature.secret
     });
+    
     res.json({
+      code: 200,
       message: "登录成功",
-      jwt: _signature
+      data: {
+        jwt: _signature
+      }
     });
   } else {
     res.json({
+      code: 400,
       message: "登录失败"
     });
   }

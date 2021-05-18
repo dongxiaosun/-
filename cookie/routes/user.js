@@ -1,7 +1,7 @@
 /*
  * @Author: 孙晓东
  * @Date: 2021-05-17 15:41:39
- * @LastEditTime: 2021-05-18 23:36:03
+ * @LastEditTime: 2021-05-19 00:04:33
  */
 var express = require("express");
 var router = express.Router();
@@ -21,8 +21,7 @@ router.get("/", function(req, res, next) {
   } else {
     res.status(401).json({
       code: "400",
-      message: "登录失效，请重新登录",
-      data: {}
+      message: "登录失效，请重新登录"
     });
   }
 });
