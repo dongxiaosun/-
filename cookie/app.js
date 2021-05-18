@@ -1,3 +1,8 @@
+/*
+ * @Author: 孙晓东
+ * @Date: 2021-05-17 15:12:22
+ * @LastEditTime: 2021-05-18 22:55:05
+ */
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
@@ -6,7 +11,9 @@ var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
 var loginRouter = require("./routes/login");
-var usersRouter = require("./routes/users");
+var userRouter = require("./routes/user");
+
+var apiPrefix = "/api";
 
 var app = express();
 
@@ -20,10 +27,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-// 定义接口
+// 静态页面
 app.use("/", indexRouter);
-app.use("/login", loginRouter);
-app.use("/users", usersRouter);
+
+// 定义接口
+app.use(`${apiPrefix}/login`, loginRouter);
+app.use(`${apiPrefix}/user`, userRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
