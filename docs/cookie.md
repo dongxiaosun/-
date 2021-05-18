@@ -73,6 +73,7 @@ Cookie: yummy_cookie=choco; tasty_cookie=strawberry
 - 服务端想要操作 cookie 认证信息的失效，比较困难，不像 session 认证那样方便。
 
 **参考资料**
+
 [http://expressjs.com/en/5x/api.html#res.cookie](http://expressjs.com/en/5x/api.html#res.cookie)
 [https://sxd.vercel.app/http/cookie.html](https://sxd.vercel.app/http/cookie.html)
 [https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site-00#section-4.1.1](https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site-00#section-4.1.1)
