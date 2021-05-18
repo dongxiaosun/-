@@ -100,5 +100,6 @@ JWT 可以用在各方之间安全地传输信息，因为 JWT 可以进行签�
 
 **参考资料**
 
-https://segmentfault.com/a/1190000023870645
-https://cloud.tencent.com/developer/article/1610950
+[https://segmentfault.com/a/1190000023870645](https://segmentfault.com/a/1190000023870645)
+
+[https://cloud.tencent.com/developer/article/1610950](https://cloud.tencent.com/developer/article/1610950)
