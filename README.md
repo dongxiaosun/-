@@ -8,7 +8,7 @@
 
 #### [sso 单点登录](./docs/sso.md)
 
-#### [扫码登录](./docs/qrcode.md)
+#### [qrcode 扫码登录](./docs/qrcode.md)
 
 **参考资料**
 
