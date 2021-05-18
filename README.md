@@ -1,12 +1,12 @@
 # 常见认证学习
 
-#### [cookie](./docs/cookie.md)
+#### [cookie 认证](./docs/cookie.md)
 
-#### [jwt](./docs/jwt.md)
+#### [jwt 认证](./docs/jwt.md)
 
-#### [oAuth2.0](./docs.0/oAuth2.0.md)
+#### [oAuth2.0 认证](./docs.0/oAuth2.0.md)
 
-#### [sso](./docs/sso.md)
+#### [sso 单点登录](./docs/sso.md)
 
 #### [扫码登录](./docs/qrcode.md)
 
