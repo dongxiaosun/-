@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cookie": "node ./cookie/bin/www",
-    "jwt": "node ./jwt/bin/www"
+    "jwt": "node ./jwt/bin/www",
+    "oauth": "node ./oAuth2.0/bin/www"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "pug": "2.0.0-beta11"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "jws": "^4.0.0"
   }
 }

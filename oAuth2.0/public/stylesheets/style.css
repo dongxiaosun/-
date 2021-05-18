@@ -1,0 +1,33 @@
+html,
+body,
+ul,
+li,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul,
+li {
+  list-style: none;
+}
+.login {
+  margin-top: -20vh;
+}
+
+/* 登录样式 */
+.login button {
+  display: block;
+  width: 200px;
+  height: 26px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
