@@ -6,7 +6,7 @@
   "scripts": {
     "cookie": "node ./cookie/bin/www",
     "jwt": "node ./jwt/bin/www",
-    "oauth": "node ./oAuth2.0/bin/www"
+    "oauth": "node ./oauth2.0/bin/www"
   },
   "repository": {
     "type": "git",
