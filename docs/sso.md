@@ -28,13 +28,13 @@
 
 ### 同域名
 
-一个企业一般情况下只有一个域名，通过二级域名区分不同的系统。比如我们有个域名叫做：http://a.com，同时有两个业务系统分别为：http://app1.a.com和http://app2.a.com。我们要做单点登录（SSO），需要一个登录系统，叫做：http://sso.a.com。
+一个企业一般情况下只有一个域名，通过二级域名区分不同的系统。比如我们有个域名叫做：http://a.com ，同时有两个业务系统分别为：http://app1.a.com 和 http://app2.a.com 。我们要做单点登录（SSO），需要一个登录系统，叫做：http://sso.a.com。
 
-我们只要在http://sso.a.com登录，http://app1.a.com和http://app2.a.com就也登录了。通过上面的登陆认证机制，我们可以知道，在http://sso.a.com中登录了，其实是在http://sso.a.com的服务端的session中记录了登录状态，同时在浏览器端（Browser）的http://sso.a.com下写入了Cookie。那么我们怎么才能让http://app1.a.com和http://app2.a.com登录呢？
+我们只要在 http://sso.a.com 登录，http://app1.a.com 和 http://app2.a.com 就也登录了。通过上面的登陆认证机制，我们可以知道，在 http://sso.a.com 中登录了，其实是在 http://sso.a.com 的服务端的 session 中记录了登录状态，同时在浏览器端（Browser）的 http://sso.a.com 下写入了 Cookie。那么我们怎么才能让 http://app1.a.com 和 http://app2.a.com 登录呢？
 
-Cookie 是不能跨域的，我们 Cookie 的 domain 属性是http://sso.a.com，在给http://app1.a.com和http://app2.a.com发送请求是带不上的。sso登录以后，可以将Cookie的域设置为顶域，即.http://a.com，这样所有子域的系统都可以访问到顶域的Cookie。
+Cookie 是不能跨域的，我们 Cookie 的 domain 属性是 http://sso.a.com，在给 http://app1.a.com 和 http://app2.a.com 发送请求是带不上的。sso 登录以后，可以将 Cookie 的域设置为顶域，即：http://a.com ，这样所有子域的系统都可以访问到顶域的Cookie。
 
-「我们在设置 Cookie 时，只能设置顶域和自己的域，不能设置其他的域。比如：我们不能在自己的系统中给http://baidu.com的域设置Cookie。」
+「我们在设置 Cookie 时，只能设置顶域和自己的域，不能设置其他的域。比如：我们不能在自己的系统中给 http://baidu.com 的域设置 Cookie。」
 
 ![sso](./images/sso3.jpg)
 
