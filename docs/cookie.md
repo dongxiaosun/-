@@ -9,7 +9,7 @@ Cookie 主要用于以下三个方面：
 浏览器行为跟踪（如跟踪分析用户行为等）
 Cookie 曾一度用于客户端数据的存储，因当时并没有其它合适的存储办法而作为唯一的存储手段，但现在随着现代浏览器开始支持各种各样的存储方式，Cookie 渐渐被淘汰。由于服务器指定 Cookie 后，浏览器的每次请求都会携带 Cookie 数据，会带来额外的性能开销（尤其是在移动环境下）。新的浏览器 API 已经允许开发者直接将数据存储到本地，如使用 Web storage API （本地存储和会话存储）或 IndexedDB 。
 
-### cookie 产生整个交互过程
+## cookie 产生整个交互过程
 
 ![cookie](./images/cookie1.png)
 
@@ -72,6 +72,11 @@ Cookie: yummy_cookie=choco; tasty_cookie=strawberry
 - 用户的客户端可能会禁用 cookie，这个时候可以依靠 url 传值来解决这个问题。
 - 服务端想要操作 cookie 认证信息的失效，比较困难，不像 session 认证那样方便。
 
+## demo
+
+[cookie 认证示例](../cookie)
+
+
 **参考资料**
 
 [http://expressjs.com/en/5x/api.html#res.cookie](http://expressjs.com/en/5x/api.html#res.cookie)
@@ -80,5 +85,5 @@ Cookie: yummy_cookie=choco; tasty_cookie=strawberry
 
 [https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site-00#section-4.1.1](https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site-00#section-4.1.1)
 
-[https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies(https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies)
+[https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Cookies)
 

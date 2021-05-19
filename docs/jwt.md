@@ -98,6 +98,11 @@ JWT 可以用在各方之间安全地传输信息，因为 JWT 可以进行签�
 - 由于 token 信息在服务端增加了一次验证数据完整性的操作，所以比 session 的认证方式增加了 cpu 的开销。
 - 但是整体来看，基于 token 的认证方式还是比 session 和 cookie 方式要有很大优势。在所知的 token 认证中，jwt 是一种优秀的解决方案。
 
+
+## demo
+
+[jwt 认证示例](../jwt)
+
 **参考资料**
 
 [https://segmentfault.com/a/1190000023870645](https://segmentfault.com/a/1190000023870645)
