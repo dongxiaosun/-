@@ -8,5 +8,7 @@
 
 这里的要点是 pc 端的那个定时请求，是用 setInterval 定时请求，微信用的是 setInterval。
 
-### demo
+## demo
+
+[扫码登录](../qrcode)
 

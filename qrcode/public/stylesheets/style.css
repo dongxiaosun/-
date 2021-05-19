@@ -1,0 +1,57 @@
+html,
+body,
+ul,
+li,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  margin-top: -20vh;
+}
+
+ul,
+li {
+  list-style: none;
+}
+li {
+  margin-bottom: 15px;
+}
+
+li.title {
+  text-align: center;
+}
+
+li span.item {
+  display: inline-block;
+  width: 160px;
+  border-bottom: 1px solid #ccc;
+}
+li.button {
+  text-align: center;
+}
+li.button span {
+  cursor: pointer;
+}
+li.button span:hover {
+  color: #8a2be2;
+}
+
+/* 登录样式 */
+li input,
+li button {
+  display: block;
+  width: 200px;
+  font-size: 18px;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
