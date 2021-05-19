@@ -1,7 +1,7 @@
 /*
  * @Author: 孙晓东
  * @Date: 2021-05-18 22:35:23
- * @LastEditTime: 2021-05-19 00:31:58
+ * @LastEditTime: 2021-05-19 10:52:34
  */
 function fetchUserInfo(resolve, reject) {
   var Authorization = window.location.search.substring(11);
@@ -22,7 +22,7 @@ function fetchUserInfo(resolve, reject) {
   });
 }
 
-function getUserInfo() {
+function init() {
   fetchUserInfo(
     function(res) {
       var code = res.code;
@@ -48,9 +48,9 @@ function getUserInfo() {
 }
 
 $(function() {
-  getUserInfo();
+  init();
 
   $(".button").on("click", function() {
-    getUserInfo();
+    init();
   });
 });

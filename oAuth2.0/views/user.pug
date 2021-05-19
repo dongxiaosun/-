@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div.main
+    ul 
+      li 
+        span.label login: 
+        span#login.item  
+      li 
+        span.label followers: 
+        span#followers.item 
+      li 
+        span.label github: 
+        span#github.item 
+      li.button 
+        span 刷新
+
+  script(src="/javascripts/user.js") 
