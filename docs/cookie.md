@@ -18,8 +18,8 @@ Cookie 曾一度用于客户端数据的存储，因当时并没有其它合适�
 - 服务端收到该客户端第一次请求后，会创建一个 session ，生产一个唯一 sessionId ；
 - 同时在响应请求中设置 cookie ，属性名为 jessionid；
 - 客户端收到后会保存 jessionid ，再次请求时，会在 header 中设置，服务端可从请求头中获取；
-- 服务端验证获取的 sessionId 是否存在，即可验证是否是同一用户；
-- 当浏览器禁用 cookie 后，基于 cookie 的 session 将不能正常工作，每次都将创建一个新的 session ，可通过 url 重写传递 sessionid。
+- 服务端验证获取的 jessionId 是否存在，即可验证是否是同一用户；
+- 当浏览器禁用 cookie 后，基于 cookie 的 session 将不能正常工作，每次都将创建一个新的 session ，可通过 url 重写传递 jessionid。
 
 ## 创建 cookie
 
