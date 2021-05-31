@@ -4,7 +4,7 @@
 
 #### [jwt 认证](./docs/jwt.md)
 
-#### [oAuth2.0 认证](./docs.0/oAuth2.0.md)
+#### [oAuth2.0 认证](./docs/oauth.md)
 
 #### [sso 单点登录](./docs/sso.md)
 
